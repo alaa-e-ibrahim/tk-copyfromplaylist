@@ -125,6 +125,8 @@ class AppDialog(QtGui.QWidget):
         for index in range(i, self.playlistCount):
             if self.playlistnames[index].startswith(prefix):
                 self.playlistSelection.addItem(self.playlistnames[index])
+            else:
+                break
 
     def binary_search(self, array, target):
         lo = 0
